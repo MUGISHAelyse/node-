@@ -1,0 +1,57 @@
+# Old URLs -> current URLs (permanent, HTTP 301). Same list as src/utils/redirects.js
+/home / 301
+/index.html / 301
+/about-us /about 301
+/aboutus /about 301
+/company /about 301
+/who-we-are /about 301
+/contact-us /contact 301
+/contactus /contact 301
+/support /contact 301
+/help /contact 301
+/administrator /admin 301
+/admin/dashboard /admin 301
+/dashboard /admin 301
+/wp-admin /admin 301
+/admin/customers /admin/users 301
+/admin/inventory /admin/products 301
+/shop /products 301
+/store /products 301
+/catalog /products 301
+/categories /products 301
+/search /products 301
+/shop/:category /products/category/:category 301
+/category/:category /products/category/:category 301
+/product/:productId /products/:productId 301
+/item/:productId /products/:productId 301
+/items/:productId /products/:productId 301
+/p/:productId /products/:productId 301
+/product/:productId/reviews /products/:productId/reviews 301
+/products/:productId/review /products/:productId/reviews 301
+/products/:productId/reviews/add /products/:productId/reviews/new 301
+/products/:productId/write-review /products/:productId/reviews/new 301
+/basket /cart 301
+/bag /cart 301
+/shopping-cart /cart 301
+/cart/checkout /checkout 301
+/signin /login 301
+/sign-in /login 301
+/sign-up /signup 301
+/register /signup 301
+/join /signup 301
+/create-account /signup 301
+/account /profile 301
+/my-account /profile 301
+/user /profile 301
+/user/profile /profile 301
+/account/orders /profile/orders 301
+/orders /profile/orders 301
+/my-orders /profile/orders 301
+/account/settings /profile/settings 301
+/settings /profile/settings 301
+
+# AI helper server function
+/api/* /.netlify/functions/:splat 200
+
+# Everything else is the React app (it shows its own 404 page)
+/* /index.html 200
